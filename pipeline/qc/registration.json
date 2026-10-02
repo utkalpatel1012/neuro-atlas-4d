@@ -1,0 +1,20 @@
+{
+  "method": "7-DoF similarity ICP (scale+rotation+translation), outer cerebrum + cerebellum \u2192 MNI brain-mask surface",
+  "status": "REGISTRATION_PENDING",
+  "matrix": null,
+  "mean_surface_distance_mm": null,
+  "p95_distance_mm": null,
+  "dice": null,
+  "inputs": {
+    "glb": "C:\\Projects\\neuro-atlas-4d\\public\\atlas\\core-anatomy\\brain.glb",
+    "glb_present": false,
+    "mni_mask": "C:\\Projects\\neuro-atlas-4d\\data-raw\\mni152lin2009casym\\mni_brain_mask.nii.gz",
+    "mask_present": false
+  },
+  "manual_steps": [
+    "python pipeline/fetch.py --core  (after \u00a74 URLs/sha256 verified; TemplateFlow MNI152NLin2009cAsym T1w + mask)",
+    "Vendor brain.glb into public/atlas/core-anatomy/ (CC BY-SA 4.0 attribution intact)",
+    "python pipeline/register_glb_to_mni.py  (computes matrix, writes pipeline/qc/registration.json + overlays)",
+    "Review pipeline/qc/ overlay PNGs before flipping any fidelity label to `registered`"
+  ]
+}

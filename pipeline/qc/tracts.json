@@ -1,0 +1,16 @@
+{
+  "status": "TRACTS_PENDING",
+  "budget": {
+    "max_streamlines_per_bundle": 2500,
+    "render": "instanced tubes / fat lines + arclength flow; centerlines for circuits"
+  },
+  "inputs": {
+    "dir": "data-raw/hcp1065",
+    "present": false
+  },
+  "manual_steps": [
+    "Verify HCP1065 licence on the releases page (CC BY-SA 4.0 claimed) + WU-Minn open-access terms",
+    "Fill pipeline/fetch.py URL/sha256 -> python pipeline/fetch.py --core",
+    "python pipeline/tracts_to_meshes.py (decimate, verify orientation on T1 overlay)"
+  ]
+}

@@ -1,0 +1,23 @@
+{"reviewStatus":"draft","note":"Exam classics; paraphrased concepts; DRAFT needs-source; stroke entries link to territory overlay.","syndromes":[
+{"id":"syn.dlpfc","name":"DLPFC syndrome","structures":["ctx.dlpfc"],"territory":null,"features":"Executive failure with apathy (paraphrased).","sourceIds":["src.needs-source"]},
+{"id":"syn.ofc","name":"Orbitofrontal syndrome","structures":["ctx.ofc"],"territory":null,"features":"Disinhibition with poor judgment (paraphrased).","sourceIds":["src.needs-source"]},
+{"id":"syn.kluver-bucy","name":"Klüver-Bucy","structures":["deep.amygdala"],"territory":null,"features":"Placidity with hyperorality (paraphrased).","sourceIds":["src.needs-source"]},
+{"id":"syn.gerstmann","name":"Gerstmann","structures":["ctx.angular"],"territory":"MCA","features":"Calculation, writing, finger and laterality signs (paraphrased).","sourceIds":["src.needs-source"]},
+{"id":"syn.balint","name":"Balint","structures":["ctx.parietal-dorsal"],"territory":"MCA/PCA watershed","features":"Simultanagnosia with optic ataxia (paraphrased).","sourceIds":["src.needs-source"]},
+{"id":"syn.anton","name":"Anton","structures":["ctx.visual"],"territory":"PCA","features":"Cortical blindness denied (paraphrased).","sourceIds":["src.needs-source"]},
+{"id":"syn.neglect","name":"Hemineglect","structures":["ctx.parietal-dorsal"],"territory":"MCA","features":"Right-brain lesions neglect left space (paraphrased).","sourceIds":["src.needs-source"]},
+{"id":"syn.broca-aphasia","name":"Broca aphasia","structures":["ctx.broca"],"territory":"MCA","features":"Non-fluent output, spared comprehension (paraphrased).","sourceIds":["src.needs-source"]},
+{"id":"syn.wernicke-aphasia","name":"Wernicke aphasia","structures":["ctx.wernicke"],"territory":"MCA","features":"Fluent empty output, poor comprehension (paraphrased).","sourceIds":["src.needs-source"]},
+{"id":"syn.wernicke-korsakoff","name":"Wernicke-Korsakoff","structures":["deep.mammillary","thal.md"],"territory":null,"features":"Confusion-ataxia-ophthalmoplegia then amnesia (paraphrased).","sourceIds":["src.needs-source"]},
+{"id":"syn.parkinsonism","name":"Parkinsonism","structures":["deep.putamen","bs.sn"],"territory":null,"features":"Bradykinesia with rigidity/tremor (paraphrased).","sourceIds":["src.needs-source"]},
+{"id":"syn.chorea","name":"Chorea","structures":["deep.striatum"],"territory":null,"features":"Random flowing movements (paraphrased).","sourceIds":["src.needs-source"]},
+{"id":"syn.hemiballismus","name":"Hemiballismus","structures":["deep.stn"],"territory":null,"features":"Violent proximal flinging (paraphrased).","sourceIds":["src.needs-source"]},
+{"id":"syn.weber","name":"Weber","structures":["bs.midbrain"],"territory":"PCA","features":"CN III with contralateral weakness (paraphrased).","sourceIds":["src.needs-source"]},
+{"id":"syn.benedikt","name":"Benedikt","structures":["bs.midbrain"],"territory":"PCA","features":"CN III with tremor signs (paraphrased).","sourceIds":["src.needs-source"]},
+{"id":"syn.millard-gubler","name":"Millard-Gubler","structures":["bs.pons"],"territory":"vertebrobasilar","features":"CN VI-VII with contralateral weakness (paraphrased).","sourceIds":["src.needs-source"]},
+{"id":"syn.wallenberg","name":"Wallenberg","structures":["bs.medulla"],"territory":"PICA","features":"Lateral medullary crossed pattern (paraphrased).","sourceIds":["src.needs-source"]},
+{"id":"syn.brown-sequard","name":"Brown-Séquard","structures":["cord.hemicord"],"territory":null,"features":"Ipsilateral weakness, contralateral pain loss (paraphrased).","sourceIds":["src.needs-source"]},
+{"id":"syn.aca","name":"ACA stroke","structures":["a1"],"territory":"ACA","features":"Leg-dominant weakness (paraphrased).","sourceIds":["src.needs-source"]},
+{"id":"syn.mca","name":"MCA stroke","structures":["m1"],"territory":"MCA","features":"Face-arm signs with aphasia/neglect (paraphrased).","sourceIds":["src.needs-source"]},
+{"id":"syn.pca","name":"PCA stroke","structures":["p1p3"],"territory":"PCA","features":"Hemianopia with memory signs (paraphrased).","sourceIds":["src.needs-source"]}
+]}

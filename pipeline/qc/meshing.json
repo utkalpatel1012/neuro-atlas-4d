@@ -1,0 +1,35 @@
+{
+  "status": "MESHING_PENDING",
+  "sources": {
+    "allen": {
+      "input": "data-raw/allen-hra3d-2020.zip",
+      "present": false,
+      "meshes": 0,
+      "note": "awaiting verified fetch (R3/R4)"
+    },
+    "cit168": {
+      "input": "data-raw/cit168.zip",
+      "present": false,
+      "meshes": 0,
+      "note": "awaiting verified fetch (R3/R4)"
+    },
+    "aan": {
+      "input": "data-raw/aan-v2.zip",
+      "present": false,
+      "meshes": 0,
+      "note": "awaiting verified fetch (R3/R4)"
+    },
+    "thalamus": {
+      "input": "data-raw/thalamus.zip",
+      "present": false,
+      "meshes": 0,
+      "note": "awaiting verified fetch (R3/R4)"
+    },
+    "hypothalamus": {
+      "input": "data-raw/hypothalamus.zip",
+      "present": false,
+      "meshes": 0,
+      "note": "awaiting verified fetch (R3/R4)"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "SPINAL_PENDING",
+  "inputs": {
+    "dir": "data-raw/pam50",
+    "present": false
+  },
+  "levels": [
+    "C1-C8",
+    "T1-T12",
+    "L1-L5",
+    "S1-S5",
+    "conus",
+    "filum"
+  ],
+  "manual_steps": [
+    "Confirm PAM50 DATA licence in spinalcordtoolbox / neuropoly/template repos",
+    "Fill pipeline/fetch.py URL/sha256 -> python pipeline/fetch.py --core",
+    "python pipeline/spinal.py (meshes + levels + brainstem seam record)"
+  ]
+}

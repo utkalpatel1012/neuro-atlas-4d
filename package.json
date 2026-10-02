@@ -1,0 +1,38 @@
+{
+  "name": "neuroatlas-4d",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "NeuroAtlas 4D — open-source browser-based interactive 3D/4D atlas (educational use only)",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "node scripts/lint.mjs",
+    "lint:content:strict": "node scripts/validate-content.mjs --strict",
+    "test": "node --test tests/*.test.mjs && vitest run",
+    "test:e2e": "playwright test",
+    "test:mapping": "node scripts/test-mapping.mjs",
+    "coverage": "node scripts/coverage-gen.mjs && node scripts/alignment-gen.mjs",
+    "test:alignment": "node scripts/test-alignment.mjs",
+    "build": "node scripts/copy-content.mjs && vite build",
+    "verify": "npm.cmd run typecheck && npm.cmd run lint && npm.cmd run lint:content:strict && npm.cmd test && npm.cmd run test:mapping && npm.cmd run test:alignment && npm.cmd run build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@niivue/niivue": "^0.69.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "0.170.0",
+    "zustand": "^5.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.4",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@types/three": "^0.186.0",
+    "typescript": "^5.6.0",
+    "vite": "^6.0.0",
+    "vitest": "^5.0.3"
+  }
+}

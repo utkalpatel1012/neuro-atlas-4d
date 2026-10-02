@@ -1,0 +1,19 @@
+{
+  "status": "VESSELS_PENDING",
+  "inputs": {
+    "mra": {
+      "path": "data-raw\\vessels-mra.zip",
+      "present": false
+    },
+    "territories": {
+      "path": "data-raw\\territories.zip",
+      "present": false
+    }
+  },
+  "h9": "label only what CoW/sinus registration or rule topology justifies; rest proxy; perforators schematic",
+  "manual_steps": [
+    "Verify \u00a74 row 9-11 licences on source pages (Zenodo / NITRC / Deep Blue)",
+    "Fill pipeline/fetch.py URL/sha256 -> python pipeline/fetch.py --core",
+    "python pipeline/vessels.py (isosurface + skeleton + named registration + MRA)"
+  ]
+}

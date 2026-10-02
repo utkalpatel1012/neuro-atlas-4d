@@ -1,0 +1,2013 @@
+{
+  "reviewStatus": "draft",
+  "count": 9,
+  "disorders": [
+    {
+      "id": "schizophrenia",
+      "name": "Schizophrenia and other psychoses",
+      "code": "F20 (concept)",
+      "circuits": [
+        "circuit.psychosis",
+        "circuit.mesolimbic-da",
+        "circuit.triple-network"
+      ],
+      "structures": [
+        "deep.striatum-dorsal",
+        "ctx.dlpfc",
+        "deep.hipp",
+        "ctx.stg"
+      ],
+      "symptoms": [
+        "delusions",
+        "auditory hallucinations",
+        "formal thought disorder",
+        "avolition"
+      ],
+      "tabs": {
+        "overview": "Psychosis involves altered reality testing with varied course across individuals.",
+        "neuroanatomy": "Structural meta-analytic findings are small on average; cite effect sizes only from sources (pending).",
+        "circuits": "Dorsal striatal dopamine signalling, prefrontal E/I balance and hippocampal-VTA loop are studied (hypotheses).",
+        "psychopathology": "Delusions map to salience circuits; voices to auditory networks; thought disorder to language circuits (draft).",
+        "clinical": "Clinical picture combines positive, negative and cognitive features with functional impact (paraphrased).",
+        "differential": "Consider mood psychosis, delirium, substance-induced and neurological causes (paraphrased).",
+        "investigations": "Workup excludes medical mimics; neuroimaging when indicated (paraphrased).",
+        "management": "Antipsychotic classes per guidelines; psychosocial rehabilitation alongside (no doses; formulary-check).",
+        "neuromodulation": "ECT considered for catatonia or treatment resistance per guidelines; rTMS/DBS investigational (draft).",
+        "course": "Course varies; early intervention and adherence support prognosis (paraphrased).",
+        "pearls": "Viva: salience + dorsal striatum + prefrontal E/I; never state hypotheses as fact.",
+        "vignette": "Original vignette: a young adult with new suspiciousness and voices; workup-first teaching case (draft)."
+      },
+      "mcqs": [
+        {
+          "q": "Salience circuit substrate in psychosis models?",
+          "o": [
+            "Dorsal striatum dopamine signalling",
+            "Arcuate fasciculus",
+            "VLPO",
+            "PAG-RVM"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Auditory voices network context?",
+          "o": [
+            "STG + monitoring circuits",
+            "V1 only",
+            "Cerebellar vermis",
+            "Conus"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Hippocampal-VTA loop status?",
+          "o": [
+            "Hypothesis",
+            "Established law",
+            "Disproven",
+            "Treatment"
+          ],
+          "a": 0,
+          "e": "Label hypotheses."
+        },
+        {
+          "q": "Cognitive dysmetria circuit?",
+          "o": [
+            "Cerebello-thalamo-cortical",
+            "HPA axis",
+            "Arcuate",
+            "Spinothalamic"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Mesocortical pattern proposed?",
+          "o": [
+            "Prefrontal hypodopaminergia",
+            "Cortical hyperdopaminergia",
+            "No change",
+            "Serotonin only"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "NMDA-hypofunction relates to?",
+          "o": [
+            "E/I imbalance models",
+            "Vitamin deficiency",
+            "Fracture healing",
+            "None"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "First-rank passivity phenomena link?",
+          "o": [
+            "Agency circuits (TPJ)",
+            "Medulla",
+            "Retina",
+            "Cochlea"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Formal thought disorder circuits?",
+          "o": [
+            "Language networks",
+            "Visual cortex only",
+            "Spinal cord",
+            "Sinuses"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Avolition maps toward?",
+          "o": [
+            "Reward circuits",
+            "Optic nerve",
+            "Cerebellar tonsil",
+            "Pituitary"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Differential that mimics psychosis acutely?",
+          "o": [
+            "Delirium",
+            "Myopia",
+            "Otitis",
+            "Eczema"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Catatonia neuromodulation per guidelines?",
+          "o": [
+            "ECT considered",
+            "No options exist",
+            "Surgery first-line",
+            "None"
+          ],
+          "a": 0,
+          "e": "Guideline-check required."
+        },
+        {
+          "q": "Negative symptom example?",
+          "o": [
+            "Avolition",
+            "Fever",
+            "Rash",
+            "Polyuria"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Cognitive domain often affected?",
+          "o": [
+            "Executive function",
+            "Colour vision only",
+            "Smell only",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Best next step for new psychosis with fever?",
+          "o": [
+            "Medical workup first",
+            "Ignore fever",
+            "Discharge",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Family psychoeducation role?",
+          "o": [
+            "Support adherence/recovery",
+            "Replace medication",
+            "Cure alone",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        }
+      ],
+      "tour": [
+        "Define psychosis in one line.",
+        "Name two circuits studied.",
+        "Localise voices vs delusions.",
+        "List two differentials.",
+        "State one ECT indication.",
+        "Give one viva pearl with hypothesis label."
+      ],
+      "references": [
+        "src.needs-source"
+      ],
+      "reviewStatus": "draft",
+      "claims": [
+        {
+          "id": "clm.schizophrenia-1",
+          "text": "Schizophrenia and other psychoses teaching pack (draft schematics).",
+          "evidence": "emerging",
+          "sourceIds": [
+            "src.needs-source"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mdd",
+      "name": "Major depressive disorder",
+      "code": "F32-F33 (concept)",
+      "circuits": [
+        "circuit.mood",
+        "circuit.mesolimbic-da",
+        "circuit.hpa"
+      ],
+      "structures": [
+        "ctx.sgacc",
+        "deep.amygdala",
+        "deep.habenula",
+        "ctx.dlpfc"
+      ],
+      "symptoms": [
+        "anhedonia",
+        "psychomotor retardation",
+        "anxiety",
+        "insomnia"
+      ],
+      "tabs": {
+        "overview": "Depression combines low mood or anhedonia with cognitive and vegetative features (paraphrased).",
+        "neuroanatomy": "Structural findings are small on average; cite meta-analytic effect sizes only (pending).",
+        "circuits": "Subgenual ACC, amygdala, habenula and prefrontal balance are studied with DLPFC asymmetry (draft).",
+        "psychopathology": "Anhedonia maps toward reward circuits; retardation toward motor loops (draft).",
+        "clinical": "Clinical features span mood, interest, sleep, appetite, energy and concentration (paraphrased).",
+        "differential": "Consider bipolarity, medical causes, substances and bereavement context (paraphrased).",
+        "investigations": "Screen thyroid, anaemia and substances where indicated (paraphrased).",
+        "management": "Antidepressant classes and psychotherapy per guidelines; no doses here (formulary-check).",
+        "neuromodulation": "rTMS to DLPFC, ECT for severe/psychotic cases per guidelines (draft).",
+        "course": "Recurrence is common; maintenance follows guideline algorithms (paraphrased).",
+        "pearls": "Viva: sgACC + habenula + DLPFC asymmetry; anhedonia = reward circuit.",
+        "vignette": "Original vignette: gradual anhedonia with early waking; measurement-based teaching case (draft)."
+      },
+      "mcqs": [
+        {
+          "q": "Anhedonia maps toward?",
+          "o": [
+            "Mesolimbic reward",
+            "Arcuate",
+            "Optic radiation",
+            "Medulla"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Subgenual ACC role studied?",
+          "o": [
+            "Mood regulation node",
+            "Hearing",
+            "Balance",
+            "Smell"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Habenula proposed role?",
+          "o": [
+            "Anti-reward signalling",
+            "Vision",
+            "Hearing",
+            "Taste"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "rTMS target in depression?",
+          "o": [
+            "DLPFC",
+            "Occiput",
+            "Cerebellar tonsil",
+            "Conus"
+          ],
+          "a": 0,
+          "e": "Guideline-check."
+        },
+        {
+          "q": "HPA axis relevance?",
+          "o": [
+            "Stress physiology",
+            "Fracture healing",
+            "Dental caries",
+            "None"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Psychomotor retardation loops?",
+          "o": [
+            "Motor circuits",
+            "Olfactory only",
+            "Retinal",
+            "Cochlear"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Bipolar screen before antidepressant?",
+          "o": [
+            "Always ask mania history",
+            "Never ask",
+            "Only in elderly",
+            "Only in children"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Psychotic depression option?",
+          "o": [
+            "ECT per guidelines",
+            "No treatment exists",
+            "Vitamins alone",
+            "None"
+          ],
+          "a": 0,
+          "e": "Guideline-check."
+        },
+        {
+          "q": "First-line psychotherapy?",
+          "o": [
+            "CBT / IPT per guidelines",
+            "No therapy works",
+            "Surgery",
+            "None"
+          ],
+          "a": 0,
+          "e": "Guideline-check."
+        },
+        {
+          "q": "Suicide risk assessment?",
+          "o": [
+            "Ask directly, safety plan",
+            "Avoid asking",
+            "Predict perfectly",
+            "None"
+          ],
+          "a": 0,
+          "e": "Principles only; no method detail."
+        },
+        {
+          "q": "Melancholic feature example?",
+          "o": [
+            "Early morning waking",
+            "Fever",
+            "Rash",
+            "Polyuria"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Atypical feature example?",
+          "o": [
+            "Mood reactivity",
+            "Fracture",
+            "Deafness",
+            "Blindness"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Maintenance phase aims?",
+          "o": [
+            "Prevent recurrence",
+            "Cure personality",
+            "Stop all follow-up",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Medical mimic to exclude?",
+          "o": [
+            "Hypothyroidism",
+            "Myopia",
+            "Dandruff",
+            "Caries"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Anhedonia viva one-liner?",
+          "o": [
+            "Reward circuit output",
+            "Bone growth",
+            "Hair growth",
+            "Nail growth"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        }
+      ],
+      "tour": [
+        "Define depression in one line.",
+        "Name the mood circuit nodes.",
+        "Localise anhedonia.",
+        "List two differentials.",
+        "State one neuromodulation target.",
+        "Give one viva pearl."
+      ],
+      "references": [
+        "src.needs-source"
+      ],
+      "reviewStatus": "draft",
+      "claims": [
+        {
+          "id": "clm.mdd-1",
+          "text": "Major depressive disorder teaching pack (draft schematics).",
+          "evidence": "emerging",
+          "sourceIds": [
+            "src.needs-source"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bipolar",
+      "name": "Bipolar disorder (mania / depression)",
+      "code": "F31 (concept)",
+      "circuits": [
+        "circuit.mood",
+        "circuit.mesolimbic-da"
+      ],
+      "structures": [
+        "ctx.vmpfc",
+        "deep.amygdala",
+        "ctx.dlpfc"
+      ],
+      "symptoms": [
+        "elevated mood",
+        "decreased need for sleep",
+        "impulsivity",
+        "anhedonia"
+      ],
+      "tabs": {
+        "overview": "Bipolar disorder alternates elevated and depressive states with inter-episode recovery (paraphrased).",
+        "neuroanatomy": "Structural findings overlap mood-psychosis spectra; cite effect sizes only (pending).",
+        "circuits": "Mania vs depression asymmetry across prefrontal-limbic balance is studied (draft).",
+        "psychopathology": "Decreased sleep need maps toward arousal circuits; impulsivity toward control circuits (draft).",
+        "clinical": "Mania features elevated mood, energy, sleep loss and risk-taking (paraphrased).",
+        "differential": "Consider substances, medical causes and unipolar depression course (paraphrased).",
+        "investigations": "Baseline labs/ECG per agent guidelines before mood stabilisers (paraphrased).",
+        "management": "Mood stabiliser + atypical classes per guidelines; no doses here (formulary-check).",
+        "neuromodulation": "ECT for severe mania/depression per guidelines (draft).",
+        "course": "Relapse prevention hinges on adherence and early-warning plans (paraphrased).",
+        "pearls": "Viva: mania vs depression asymmetry; sleep loss is core.",
+        "vignette": "Original vignette: reduced sleep with over-spending; collateral-first teaching case (draft)."
+      },
+      "mcqs": [
+        {
+          "q": "Core mania sleep feature?",
+          "o": [
+            "Decreased need for sleep",
+            "Hypersomnia always",
+            "No change",
+            "Coma"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Impulsivity maps toward?",
+          "o": [
+            "Control circuits",
+            "Retina",
+            "Cochlea",
+            "Skin"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Mood stabiliser class?",
+          "o": [
+            "Lithium / valproate / atypical per guidelines",
+            "Antibiotics",
+            "Antihistamines only",
+            "None"
+          ],
+          "a": 0,
+          "e": "Guideline-check; no doses."
+        },
+        {
+          "q": "Antidepressant risk in bipolar?",
+          "o": [
+            "Mood switch",
+            "No risk at all",
+            "Cures mania",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Psychosis in mania localises?",
+          "o": [
+            "Salience + mood circuits",
+            "Knee joint",
+            "Elbow",
+            "Ankle"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Mixed features mean?",
+          "o": [
+            "Both polarities together",
+            "No symptoms",
+            "Only anxiety",
+            "Only sleep"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Rapid cycling definition context?",
+          "o": [
+            "Episode frequency concept",
+            "Bicycle speed",
+            "Heart rate",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Baseline test before lithium?",
+          "o": [
+            "Renal/thyroid per guidelines",
+            "No tests needed",
+            "X-ray foot",
+            "None"
+          ],
+          "a": 0,
+          "e": "Guideline-check."
+        },
+        {
+          "q": "Pregnancy planning needs?",
+          "o": [
+            "Preconception review",
+            "No review needed",
+            "Stop all care",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Early-warning plan includes?",
+          "o": [
+            "Sleep/mood diary",
+            "No monitoring",
+            "Only labs",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Depressive pole circuits?",
+          "o": [
+            "Mood + reward",
+            "Optic only",
+            "Olfactory only",
+            "None"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Substance screen why?",
+          "o": [
+            "Mimics/trigger",
+            "Irrelevant",
+            "Illegal everywhere",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "ECT role?",
+          "o": [
+            "Severe/resistant states",
+            "Never used",
+            "First-line always",
+            "None"
+          ],
+          "a": 0,
+          "e": "Guideline-check."
+        },
+        {
+          "q": "Collateral history value?",
+          "o": [
+            "Confirms sleep/behaviour change",
+            "Useless",
+            "Harmful",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Viva pearl on asymmetry?",
+          "o": [
+            "Mania vs depression prefrontal balance",
+            "Bone asymmetry",
+            "Hair asymmetry",
+            "None"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        }
+      ],
+      "tour": [
+        "Define bipolarity in one line.",
+        "Name asymmetry concept.",
+        "Localise impulsivity.",
+        "List stabiliser classes.",
+        "State ECT role.",
+        "Give one viva pearl."
+      ],
+      "references": [
+        "src.needs-source"
+      ],
+      "reviewStatus": "draft",
+      "claims": [
+        {
+          "id": "clm.bipolar-1",
+          "text": "Bipolar disorder (mania / depression) teaching pack (draft schematics).",
+          "evidence": "emerging",
+          "sourceIds": [
+            "src.needs-source"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ocd",
+      "name": "OCD and related disorders",
+      "code": "F42 (concept)",
+      "circuits": [
+        "circuit.cstc"
+      ],
+      "structures": [
+        "ctx.ofc",
+        "deep.striatum",
+        "thal.md"
+      ],
+      "symptoms": [
+        "obsessions",
+        "compulsions",
+        "anxiety"
+      ],
+      "tabs": {
+        "overview": "OCD combines intrusive thoughts with repetitive behaviours relieving distress (paraphrased).",
+        "neuroanatomy": "Orbitofronto-striatal findings are small; cite effect sizes only (pending).",
+        "circuits": "Orbitofronto-striatal loop with direct/indirect imbalance is the core model (draft).",
+        "psychopathology": "Urges map toward habit circuits; anxiety toward threat circuits (draft).",
+        "clinical": "Clinically time-consuming rituals impair function with preserved insight often (paraphrased).",
+        "differential": "Consider tics, autism-related routines and psychosis (paraphrased).",
+        "investigations": "Assess severity with standard scales; medical workup rarely central (paraphrased).",
+        "management": "SSRI + exposure-response prevention per guidelines; no doses (formulary-check).",
+        "neuromodulation": "DBS/rTMS for refractory cases in specialist centres (draft).",
+        "course": "Course is often chronic with waxing; ERP sustains gains (paraphrased).",
+        "pearls": "Viva: OFC-striatal loop; ERP is first-line with SSRI.",
+        "vignette": "Original vignette: contamination fears with washing; hierarchy-based teaching case (draft)."
+      },
+      "mcqs": [
+        {
+          "q": "Core OCD loop?",
+          "o": [
+            "Orbitofronto-striatal",
+            "HPA axis",
+            "Arcuate",
+            "Spinothalamic"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "First-line psychotherapy?",
+          "o": [
+            "Exposure-response prevention",
+            "No therapy",
+            "Surgery first",
+            "None"
+          ],
+          "a": 0,
+          "e": "Guideline-check."
+        },
+        {
+          "q": "Medication class?",
+          "o": [
+            "SSRI per guidelines",
+            "Antibiotics",
+            "Steroids",
+            "None"
+          ],
+          "a": 0,
+          "e": "No doses."
+        },
+        {
+          "q": "Insight is usually?",
+          "o": [
+            "Preserved",
+            "Absent always",
+            "Coma",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": " tic-related comorbidity?",
+          "o": [
+            "Tic disorders",
+            "Fractures",
+            "Caries",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Hoarding vs collecting?",
+          "o": [
+            "Distress/impairment defines disorder",
+            "Identical always",
+            "Never clinical",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Trichotillomania group?",
+          "o": [
+            "OCD-related",
+            "Psychotic",
+            "Delirium",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Direct vs indirect balance?",
+          "o": [
+            "Go/no-go striatal paths",
+            "Blood groups",
+            "Bone types",
+            "None"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Refractory option?",
+          "o": [
+            "Specialist DBS/rTMS",
+            "No options",
+            "Amputation",
+            "None"
+          ],
+          "a": 0,
+          "e": "Guideline-check."
+        },
+        {
+          "q": "Reassurance-seeking role?",
+          "o": [
+            "Maintains cycle",
+            "Cures instantly",
+            "Irrelevant",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Onset pattern often?",
+          "o": [
+            "Gradual waxing",
+            "Sudden coma",
+            "Fever only",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Family accommodation?",
+          "o": [
+            "Reduce gradually",
+            "Increase forever",
+            "Ignore",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Differential with psychosis?",
+          "o": [
+            "Insight + ego-dystonicity",
+            "Identical",
+            "No difference",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "ERP hierarchy starts?",
+          "o": [
+            "Low distress items",
+            "Hardest item",
+            "No hierarchy",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Viva one-liner?",
+          "o": [
+            "OFC-striatal loop + ERP",
+            "Bone loop",
+            "Hair loop",
+            "None"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        }
+      ],
+      "tour": [
+        "Define OCD in one line.",
+        "Name the loop.",
+        "Localise urges.",
+        "State first-line therapy.",
+        "List one refractory option.",
+        "Give one viva pearl."
+      ],
+      "references": [
+        "src.needs-source"
+      ],
+      "reviewStatus": "draft",
+      "claims": [
+        {
+          "id": "clm.ocd-1",
+          "text": "OCD and related disorders teaching pack (draft schematics).",
+          "evidence": "emerging",
+          "sourceIds": [
+            "src.needs-source"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sud",
+      "name": "Substance use disorders",
+      "code": "F10-F19 (concept)",
+      "circuits": [
+        "circuit.mesolimbic-da",
+        "circuit.hpa"
+      ],
+      "structures": [
+        "bs.vta",
+        "deep.accumbens",
+        "deep.amygdala-extended"
+      ],
+      "symptoms": [
+        "craving",
+        "anxiety",
+        "impulsivity",
+        "insomnia"
+      ],
+      "tabs": {
+        "overview": "Addiction cycles binge, withdrawal-negative affect and preoccupation-craving stages (paraphrased).",
+        "neuroanatomy": "Structural findings vary by substance; cite effect sizes only (pending).",
+        "circuits": "VTA-NAc reward, extended-amygdala stress and habenula anti-reward interact (draft).",
+        "psychopathology": "Craving maps toward incentive circuits; withdrawal toward stress circuits (draft).",
+        "clinical": "Intoxication vs withdrawal signs differ per substance class (paraphrased).",
+        "differential": "Consider dual diagnosis and medical complications per substance (paraphrased).",
+        "investigations": "Toxicology, liver and infectious screens where indicated (paraphrased).",
+        "management": "Agonist/antagonist/aversive classes per substance guidelines; no doses (formulary-check).",
+        "neuromodulation": "rTMS/DBS investigational for craving (draft).",
+        "course": "Relapse is common; contingency and follow-up help (paraphrased).",
+        "pearls": "Viva: three stages + habenula anti-reward.",
+        "vignette": "Original vignette: craving with morning relief drinking; stage-based teaching case (draft)."
+      },
+      "mcqs": [
+        {
+          "q": "Reward core path?",
+          "o": [
+            "VTA → NAc",
+            "VLPO → cortex",
+            "Retina → LGN",
+            "Cochlea → MGN"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Anti-reward node?",
+          "o": [
+            "Habenula",
+            "Cerebellar tonsil",
+            "Pineal",
+            "Conus"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Withdrawal affect system?",
+          "o": [
+            "Extended amygdala stress",
+            "Arcuate",
+            "Optic nerve",
+            "None"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Alcohol withdrawal sign?",
+          "o": [
+            "Tremor/seizure risk",
+            "Miosis only",
+            "Fever never",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Opioid withdrawal sign?",
+          "o": [
+            "Mydriasis/piloerection",
+            "Miosis",
+            "Coma always",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Stimulant intoxication?",
+          "o": [
+            "Mydriasis/agitation",
+            "Miosis/sedation",
+            "No signs",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Cannabis withdrawal?",
+          "o": [
+            "Irritability/sleep loss",
+            "No syndrome",
+            "Coma",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Nicotine replacement role?",
+          "o": [
+            "Craving relief",
+            "Cure alone",
+            "No role",
+            "None"
+          ],
+          "a": 0,
+          "e": "Guideline-check."
+        },
+        {
+          "q": "Dual diagnosis means?",
+          "o": [
+            "SUD + mental illness",
+            "Two infections",
+            "Two fractures",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Contingency management is?",
+          "o": [
+            "Reward-based therapy",
+            "Punishment only",
+            "Surgery",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Wernicke risk in alcohol use?",
+          "o": [
+            "Thiamine before glucose",
+            "No risk",
+            "Only in elderly",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Craving viva line?",
+          "o": [
+            "Incentive salience circuit",
+            "Bone circuit",
+            "Hair circuit",
+            "None"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Preoccupation stage?",
+          "o": [
+            "Craving/anticipation",
+            "No stage",
+            "Only intoxication",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Harm reduction example?",
+          "o": [
+            "Needle exchange",
+            "No measures",
+            "Isolation",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Follow-up focus?",
+          "o": [
+            "Relapse prevention",
+            "Discharge forever",
+            "No follow-up",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        }
+      ],
+      "tour": [
+        "Define addiction cycle.",
+        "Name three stages.",
+        "Localise craving.",
+        "List withdrawal signs.",
+        "State one therapy.",
+        "Give one viva pearl."
+      ],
+      "references": [
+        "src.needs-source"
+      ],
+      "reviewStatus": "draft",
+      "claims": [
+        {
+          "id": "clm.sud-1",
+          "text": "Substance use disorders teaching pack (draft schematics).",
+          "evidence": "emerging",
+          "sourceIds": [
+            "src.needs-source"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "somatic",
+      "name": "Somatic symptom disorder",
+      "code": "F45 (concept)",
+      "circuits": [
+        "circuit.fnd",
+        "circuit.pain"
+      ],
+      "structures": [
+        "ctx.insula-ant",
+        "ctx.acc",
+        "ctx.sma"
+      ],
+      "symptoms": [
+        "somatic preoccupation",
+        "anxiety",
+        "interoceptive disturbance"
+      ],
+      "tabs": {
+        "overview": "Distressing bodily symptoms with disproportionate thoughts and behaviours (paraphrased).",
+        "neuroanatomy": "No diagnostic structural signature; interoception circuits studied (emerging).",
+        "circuits": "Insula-ACC interoceptive and pain-matrix interactions proposed (emerging).",
+        "psychopathology": "Preoccupation maps toward salience/interoceptive circuits (draft).",
+        "clinical": "Symptoms are genuine and impairing; function matters most (paraphrased).",
+        "differential": "Rule out medical causes proportionately without over-investigation (paraphrased).",
+        "investigations": "Targeted workup, then regular follow-up visits (paraphrased).",
+        "management": "CBT, psychoeducation and antidepressant classes where comorbid (no doses).",
+        "neuromodulation": "No routine neuromodulation; treat comorbidity per guidelines (draft).",
+        "course": "Prognosis improves with continuity and function focus (paraphrased).",
+        "pearls": "Viva: genuine symptoms; interoception circuits emerging.",
+        "vignette": "Original vignette: multiple pains with normal workup; function-first teaching case (draft)."
+      },
+      "mcqs": [
+        {
+          "q": "Key circuit studied?",
+          "o": [
+            "Interoceptive insula-ACC",
+            "Arcuate",
+            "Optic nerve",
+            "Conus"
+          ],
+          "a": 0,
+          "e": "Emerging."
+        },
+        {
+          "q": "Symptoms are?",
+          "o": [
+            "Genuine and impairing",
+            "Feigned always",
+            "Imaginary only",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Workup approach?",
+          "o": [
+            "Proportionate then follow-up",
+            "Endless scans",
+            "No exam",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "First-line therapy?",
+          "o": [
+            "CBT + psychoeducation",
+            "Surgery",
+            "No care",
+            "None"
+          ],
+          "a": 0,
+          "e": "Guideline-check."
+        },
+        {
+          "q": "Comorbid anxiety role?",
+          "o": [
+            "Amplifies focus",
+            "Irrelevant",
+            "Protective always",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Reassurance pattern?",
+          "o": [
+            "Brief relief then return",
+            "Permanent cure",
+            "Never sought",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Function focus means?",
+          "o": [
+            "Activity scheduling",
+            "Bed rest forever",
+            "No activity",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Red-flag duty?",
+          "o": [
+            "Re-examine new signs",
+            "Ignore all",
+            "Discharge all",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Pain matrix nodes?",
+          "o": [
+            "Insula + ACC + thalamus",
+            "Cochlea only",
+            "Retina only",
+            "None"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Placebo context?",
+          "o": [
+            "Expectation circuitry",
+            "No biology",
+            "Magic",
+            "None"
+          ],
+          "a": 0,
+          "e": "Emerging."
+        },
+        {
+          "q": "Collateral role?",
+          "o": [
+            "Function history",
+            "Useless",
+            "Harmful",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Prognosis factor?",
+          "o": [
+            "Continuity of care",
+            "Doctor shopping",
+            "No follow-up",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Depression screen why?",
+          "o": [
+            "Common comorbidity",
+            "Irrelevant",
+            "Forbidden",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Note wording matters?",
+          "o": [
+            "Validate + plan",
+            "Dismiss",
+            "Accuse",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Viva line?",
+          "o": [
+            "Genuine + interoception",
+            "Fake + ignore",
+            "No circuits",
+            "None"
+          ],
+          "a": 0,
+          "e": "Draft."
+        }
+      ],
+      "tour": [
+        "Define disorder in one line.",
+        "Name interoceptive nodes.",
+        "State workup stance.",
+        "List one therapy.",
+        "State prognosis factor.",
+        "Give one viva pearl."
+      ],
+      "references": [
+        "src.needs-source"
+      ],
+      "reviewStatus": "draft",
+      "claims": [
+        {
+          "id": "clm.somatic-1",
+          "text": "Somatic symptom disorder teaching pack (draft schematics).",
+          "evidence": "emerging",
+          "sourceIds": [
+            "src.needs-source"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conversion",
+      "name": "Conversion disorder / functional neurological disorder",
+      "code": "F44 (concept)",
+      "circuits": [
+        "circuit.fnd",
+        "circuit.motor"
+      ],
+      "structures": [
+        "ctx.sma",
+        "ctx.tpj",
+        "ctx.insula-ant"
+      ],
+      "symptoms": [
+        "conversion motor symptoms",
+        "conversion sensory symptoms",
+        "dissociation"
+      ],
+      "tabs": {
+        "overview": "Neurological-appearing symptoms incompatible with recognised disease patterns (paraphrased).",
+        "neuroanatomy": "No diagnostic lesion; limbic-motor interaction models are emerging/hypothesis.",
+        "circuits": "SMA, TPJ agency and insula-ACC circuits proposed (hypothesis).",
+        "psychopathology": "Motor symptoms map toward voluntary-motor vs agency mismatch (hypothesis).",
+        "clinical": "Diagnosis rests on positive inconsistency signs with examination (paraphrased).",
+        "differential": "Distinguish from feigning by internal inconsistency, not accusation (paraphrased).",
+        "investigations": "Video/EEG or imaging only as indicated (paraphrased).",
+        "management": "Physiotherapy + CBT-informed rehabilitation per guidelines (draft).",
+        "neuromodulation": "No routine neuromodulation (draft).",
+        "course": "Early explanation + rehab improves outcome (paraphrased).",
+        "pearls": "Viva: positive signs; agency hypothesis labelled.",
+        "vignette": "Original vignette: give-way weakness with Hoover sign; explanation-first case (draft)."
+      },
+      "mcqs": [
+        {
+          "q": "Key agency node proposed?",
+          "o": [
+            "TPJ",
+            "Cochlea",
+            "Retina",
+            "Skin"
+          ],
+          "a": 0,
+          "e": "Hypothesis."
+        },
+        {
+          "q": "Motor node proposed?",
+          "o": [
+            "SMA",
+            "Medulla only",
+            "Conus",
+            "None"
+          ],
+          "a": 0,
+          "e": "Hypothesis."
+        },
+        {
+          "q": "Diagnosis rests on?",
+          "o": [
+            "Positive inconsistency signs",
+            "Accusation",
+            "No exam",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Hoover sign shows?",
+          "o": [
+            "Inconsistency",
+            "Fracture",
+            "Infection",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "First step?",
+          "o": [
+            "Clear explanation",
+            "Confrontation",
+            "Discharge",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Rehab includes?",
+          "o": [
+            "Physiotherapy + CBT-informed",
+            "Bed rest years",
+            "No rehab",
+            "None"
+          ],
+          "a": 0,
+          "e": "Guideline-check."
+        },
+        {
+          "q": "Evidence level?",
+          "o": [
+            "Emerging/hypothesis",
+            "Law",
+            "Disproven",
+            "None"
+          ],
+          "a": 0,
+          "e": "Label honestly."
+        },
+        {
+          "q": "Seizure-like events workup?",
+          "o": [
+            "Video-EEG when indicated",
+            "Never needed",
+            "Always surgery",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Sensory signs?",
+          "o": [
+            "Splitting midline patterns",
+            "Dermatomal always",
+            "No signs",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Comorbidity screen?",
+          "o": [
+            "Anxiety/depression",
+            "No screen",
+            "Only labs",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Prognosis factor?",
+          "o": [
+            "Early rehab",
+            "Delay years",
+            "No care",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Family role?",
+          "o": [
+            "Reinforce function",
+            "Punish symptoms",
+            "Ignore patient",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Interoception node?",
+          "o": [
+            "Insula",
+            "Arcuate",
+            "Optic nerve",
+            "None"
+          ],
+          "a": 0,
+          "e": "Hypothesis."
+        },
+        {
+          "q": "Documentation should?",
+          "o": [
+            "Describe signs objectively",
+            "Accuse",
+            "Omit exam",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Viva line?",
+          "o": [
+            "SMA-TPJ agency hypothesis",
+            "Bone hypothesis",
+            "Hair hypothesis",
+            "None"
+          ],
+          "a": 0,
+          "e": "Hypothesis."
+        }
+      ],
+      "tour": [
+        "Define FND in one line.",
+        "Name two nodes.",
+        "State one positive sign.",
+        "Give explanation line.",
+        "List rehab duo.",
+        "Give viva pearl with label."
+      ],
+      "references": [
+        "src.needs-source"
+      ],
+      "reviewStatus": "draft",
+      "claims": [
+        {
+          "id": "clm.conversion-1",
+          "text": "Conversion disorder / functional neurological disorder teaching pack (draft schematics).",
+          "evidence": "emerging",
+          "sourceIds": [
+            "src.needs-source"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anxiety",
+      "name": "Anxiety disorders (GAD / panic / social)",
+      "code": "F40-F41 (concept)",
+      "circuits": [
+        "circuit.fear-anxiety"
+      ],
+      "structures": [
+        "deep.amygdala-bla",
+        "deep.amygdala-cea",
+        "ctx.vmpfc",
+        "bs.pag"
+      ],
+      "symptoms": [
+        "fear",
+        "anxiety",
+        "anxiety",
+        "insomnia"
+      ],
+      "tabs": {
+        "overview": "Anxiety disorders share excessive fear/worry with avoidance and arousal (paraphrased).",
+        "neuroanatomy": "No diagnostic structural signature; threat-circuit function studied (emerging).",
+        "circuits": "BLA-CeA, vmPFC extinction, BNST sustained anxiety and PAG output (draft).",
+        "psychopathology": "Panic maps toward PAG + arousal; social toward evaluation circuits (draft).",
+        "clinical": "GAD is broad worry; panic is abrupt surges; social is scrutiny fear (paraphrased).",
+        "differential": "Consider medical (thyroid), substances and depression comorbidity (paraphrased).",
+        "investigations": "Vitals, thyroid and substance review where indicated (paraphrased).",
+        "management": "SSRI/SNRI + CBT per guidelines; no doses (formulary-check).",
+        "neuromodulation": "No routine neuromodulation (draft).",
+        "course": "Course tends to persist without treatment; CBT gains hold (paraphrased).",
+        "pearls": "Viva: BLA→CeA→PAG; vmPFC extinction; BNST sustained.",
+        "vignette": "Original vignette: panic-like surges with normal ECG; exposure-based case (draft)."
+      },
+      "mcqs": [
+        {
+          "q": "Fear output path?",
+          "o": [
+            "BLA → CeA → PAG",
+            "VLPO → cortex",
+            "Retina → LGN",
+            "None"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Extinction node?",
+          "o": [
+            "vmPFC",
+            "Cochlea",
+            "Conus",
+            "Pineal"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Sustained anxiety node?",
+          "o": [
+            "BNST",
+            "Arcuate",
+            "Optic nerve",
+            "None"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Panic arousal nuclei?",
+          "o": [
+            "LC + hypothalamus",
+            "VLPO only",
+            "None",
+            "Bones"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "First-line therapy?",
+          "o": [
+            "CBT",
+            "Surgery",
+            "No therapy",
+            "None"
+          ],
+          "a": 0,
+          "e": "Guideline-check."
+        },
+        {
+          "q": "Medication class?",
+          "o": [
+            "SSRI/SNRI",
+            "Antibiotics",
+            "Steroids",
+            "None"
+          ],
+          "a": 0,
+          "e": "No doses."
+        },
+        {
+          "q": "Benzodiazepine stance?",
+          "o": [
+            "Short-term caution",
+            "First-line chronic",
+            "Never any use",
+            "None"
+          ],
+          "a": 0,
+          "e": "Guideline-check."
+        },
+        {
+          "q": "Medical mimic?",
+          "o": [
+            "Hyperthyroidism",
+            "Myopia",
+            "Caries",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Social anxiety core?",
+          "o": [
+            "Scrutiny fear",
+            "Fever",
+            "Rash",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Exposure principle?",
+          "o": [
+            "Graded hierarchy",
+            "Flooding always",
+            "Avoidance forever",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Panic attack peak?",
+          "o": [
+            "Minutes",
+            "Days",
+            "Months",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "GAD worry scope?",
+          "o": [
+            "Multiple domains",
+            "Single topic only",
+            "No worry",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Comorbidity screen?",
+          "o": [
+            "Depression",
+            "No screen",
+            "Only X-ray",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Relaxation role?",
+          "o": [
+            "Adjunct skill",
+            "Cure alone",
+            "Harmful",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Viva line?",
+          "o": [
+            "BLA-CeA-PAG + vmPFC",
+            "Bone-PAG",
+            "Hair-PAG",
+            "None"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        }
+      ],
+      "tour": [
+        "Define anxiety in one line.",
+        "Name fear path.",
+        "State extinction node.",
+        "List first-line duo.",
+        "Name one mimic.",
+        "Give viva pearl."
+      ],
+      "references": [
+        "src.needs-source"
+      ],
+      "reviewStatus": "draft",
+      "claims": [
+        {
+          "id": "clm.anxiety-1",
+          "text": "Anxiety disorders (GAD / panic / social) teaching pack (draft schematics).",
+          "evidence": "emerging",
+          "sourceIds": [
+            "src.needs-source"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ptsd",
+      "name": "Post-traumatic stress disorder",
+      "code": "F43 (concept)",
+      "circuits": [
+        "circuit.fear-anxiety",
+        "circuit.hpa"
+      ],
+      "structures": [
+        "deep.amygdala",
+        "ctx.vmpfc",
+        "deep.hipp"
+      ],
+      "symptoms": [
+        "fear",
+        "anxiety",
+        "dissociation",
+        "insomnia"
+      ],
+      "tabs": {
+        "overview": "PTSD follows trauma with re-experiencing, avoidance, arousal and mood shifts (paraphrased).",
+        "neuroanatomy": "No diagnostic structural signature; threat-memory circuits studied (emerging).",
+        "circuits": "Amygdala reactivity, vmPFC/hippocampal context and HPA tone interact (draft).",
+        "psychopathology": "Flashbacks map toward memory-threat coupling; numbing toward regulation (draft).",
+        "clinical": "Screen trauma type, dissociation and comorbidity sensitively (paraphrased).",
+        "differential": "Distinguish from depression, TBI and prolonged grief context (paraphrased).",
+        "investigations": "Medical workup only as indicated; safety first (paraphrased).",
+        "management": "Trauma-focused CBT/EMDR + SSRI classes per guidelines; no doses (formulary-check).",
+        "neuromodulation": "No routine neuromodulation (draft).",
+        "course": "Early evidence-based care improves trajectory (paraphrased).",
+        "pearls": "Viva: context extinction via vmPFC-hippocampus.",
+        "vignette": "Original vignette: nightmares after event with avoidance; phased teaching case (draft)."
+      },
+      "mcqs": [
+        {
+          "q": "Context node?",
+          "o": [
+            "Hippocampus + vmPFC",
+            "Cochlea",
+            "Conus",
+            "Pineal"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "First-line therapy?",
+          "o": [
+            "Trauma-focused CBT/EMDR",
+            "Surgery",
+            "No therapy",
+            "None"
+          ],
+          "a": 0,
+          "e": "Guideline-check."
+        },
+        {
+          "q": "Medication class?",
+          "o": [
+            "SSRI per guidelines",
+            "Antibiotics",
+            "Steroids",
+            "None"
+          ],
+          "a": 0,
+          "e": "No doses."
+        },
+        {
+          "q": "Dissociation maps toward?",
+          "o": [
+            "Regulation circuits",
+            "Bones",
+            "Hair",
+            "None"
+          ],
+          "a": 0,
+          "e": "Emerging."
+        },
+        {
+          "q": "HPA relevance?",
+          "o": [
+            "Stress tone",
+            "Fracture healing",
+            "Dental",
+            "None"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        },
+        {
+          "q": "Avoidance maintains?",
+          "o": [
+            "Symptoms",
+            "Cure",
+            "Nothing",
+            "Bones"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Screen first?",
+          "o": [
+            "Safety + trauma type",
+            "No screen",
+            "Only labs",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Comorbidity common?",
+          "o": [
+            "Depression/substance use",
+            "Never",
+            "Only fever",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Nightmares relate to?",
+          "o": [
+            "Memory consolidation",
+            "Diet only",
+            "Shoes",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Grounding technique role?",
+          "o": [
+            "Present-moment anchor",
+            "Cure alone",
+            "Harmful",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Prolonged grief differs by?",
+          "o": [
+            "Loss context",
+            "Identical",
+            "No difference",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "TBI overlap?",
+          "o": [
+            "Amnesia/confusion screen",
+            "Irrelevant",
+            "Same always",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Follow-up focus?",
+          "o": [
+            "Function + symptoms",
+            "Discharge",
+            "No care",
+            "None"
+          ],
+          "a": 0,
+          "e": "Teaching concept."
+        },
+        {
+          "q": "Debriefing stance?",
+          "o": [
+            "Not routine single-session",
+            "Mandatory always",
+            "Forbidden topic",
+            "None"
+          ],
+          "a": 0,
+          "e": "Guideline-check."
+        },
+        {
+          "q": "Viva line?",
+          "o": [
+            "Context extinction circuit",
+            "Bone circuit",
+            "Hair circuit",
+            "None"
+          ],
+          "a": 0,
+          "e": "Draft schematic."
+        }
+      ],
+      "tour": [
+        "Define PTSD in one line.",
+        "Name context nodes.",
+        "State first-line therapy.",
+        "List one differential.",
+        "State safety priority.",
+        "Give viva pearl."
+      ],
+      "references": [
+        "src.needs-source"
+      ],
+      "reviewStatus": "draft",
+      "claims": [
+        {
+          "id": "clm.ptsd-1",
+          "text": "Post-traumatic stress disorder teaching pack (draft schematics).",
+          "evidence": "emerging",
+          "sourceIds": [
+            "src.needs-source"
+          ]
+        }
+      ]
+    }
+  ]
+}

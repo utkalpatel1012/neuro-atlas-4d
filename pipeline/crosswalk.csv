@@ -1,0 +1,7 @@
+source_id,source_name,ta2_id,fma_id,allen_id,cit168_label,canonical_id,side
+allen:1,Anterior cingulate area dorsal,,,allen:1,,ctx.cingulate.acc.dorsal,median
+cit168:NAc,Nucleus accumbens,,,,NAc,deep.accumbens,bilateral
+aan:LC,Locus coeruleus,,,,LC,bs.lc,bilateral
+th:N/A,Mediodorsal nucleus,,,,,thal.md,bilateral
+hy:PVN,Paraventricular nucleus,,,,,hypo.pvn,bilateral
+glb:437,Caudate (gross),,,,,,deep.caudate,bilateral

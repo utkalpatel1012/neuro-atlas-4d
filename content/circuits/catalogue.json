@@ -1,0 +1,387 @@
+{
+  "$schema": "circuit v1 (P7)",
+  "notes": "All edges schematic-spline/schematic until HCP centerlines land. All claims draft needs-source (P8 replaces with guideline citations). Hypotheses explicitly labelled.",
+  "transmitters": ["dopamine", "serotonin", "noradrenaline", "acetylcholine", "histamine", "orexin", "GABA", "glutamate", "opioid", "endocannabinoid"],
+  "circuits": [
+    {
+      "id": "circuit.mesolimbic-da", "name": "Mesolimbic reward / addiction", "category": "neurotransmitter",
+      "nodes": [
+        { "structureId": "bs.vta", "label": "VTA", "role": "source", "transmitter": "dopamine", "marker": "schematic" },
+        { "structureId": "deep.accumbens", "label": "Nucleus accumbens", "role": "relay", "transmitter": "dopamine", "marker": "schematic" },
+        { "structureId": "deep.ventral-pallidum", "label": "Ventral pallidum", "role": "relay", "transmitter": "GABA", "marker": "schematic" },
+        { "structureId": "ctx.pfc", "label": "Prefrontal cortex", "role": "target", "transmitter": "glutamate", "marker": "schematic" }
+      ],
+      "edges": [
+        { "id": "e1", "from": "bs.vta", "to": "deep.accumbens", "transmitter": "dopamine", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e2", "from": "deep.accumbens", "to": "deep.ventral-pallidum", "transmitter": "GABA", "effect": "inhibitory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e3", "from": "ctx.pfc", "to": "deep.accumbens", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } }
+      ],
+      "steps": [
+        { "t": 0.0, "caption": "VTA dopamine neurons modulate accumbens activity.", "activeEdges": ["e1"], "claimIds": ["clm.mesolimbic-1"] },
+        { "t": 0.5, "caption": "Accumbens output reaches ventral pallidum.", "activeEdges": ["e2"], "claimIds": ["clm.mesolimbic-1"] },
+        { "t": 1.0, "caption": "Prefrontal glutamate completes the loop.", "activeEdges": ["e3"], "claimIds": ["clm.mesolimbic-1"] }
+      ],
+      "disorders": ["sud", "schizophrenia"], "claims": ["clm.mesolimbic-1"], "reviewStatus": "draft"
+    },
+    {
+      "id": "circuit.fear-anxiety", "name": "Fear and anxiety", "category": "loop",
+      "nodes": [
+        { "structureId": "deep.amygdala-bla", "label": "Amygdala BLA", "role": "source", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "deep.amygdala-cea", "label": "Amygdala CeA", "role": "relay", "transmitter": "GABA", "marker": "schematic" },
+        { "structureId": "ctx.vmpfc", "label": "vmPFC", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "bs.pag", "label": "PAG", "role": "target", "transmitter": "glutamate", "marker": "schematic" }
+      ],
+      "edges": [
+        { "id": "e1", "from": "deep.amygdala-bla", "to": "deep.amygdala-cea", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e2", "from": "ctx.vmpfc", "to": "deep.amygdala-cea", "transmitter": "glutamate", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e3", "from": "deep.amygdala-cea", "to": "bs.pag", "transmitter": "GABA", "effect": "inhibitory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } }
+      ],
+      "steps": [
+        { "t": 0.0, "caption": "BLA signals reach CeA output neurons.", "activeEdges": ["e1"], "claimIds": ["clm.fear-1"] },
+        { "t": 0.5, "caption": "vmPFC modulates CeA during extinction.", "activeEdges": ["e2"], "claimIds": ["clm.fear-1"] },
+        { "t": 1.0, "caption": "CeA drives PAG defensive output.", "activeEdges": ["e3"], "claimIds": ["clm.fear-1"] }
+      ],
+      "disorders": ["anxiety", "ptsd"], "claims": ["clm.fear-1"], "reviewStatus": "draft"
+    },
+    {
+      "id": "circuit.cstc", "name": "Cortico-striato-thalamo-cortical loops", "category": "loop",
+      "nodes": [
+        { "structureId": "ctx.dlpfc", "label": "DLPFC / OFC", "role": "source", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "deep.striatum", "label": "Striatum", "role": "relay", "transmitter": "GABA", "marker": "schematic" },
+        { "structureId": "deep.gp", "label": "Globus pallidus", "role": "relay", "transmitter": "GABA", "marker": "schematic" },
+        { "structureId": "thal.va-md", "label": "VA / MD thalamus", "role": "target", "transmitter": "glutamate", "marker": "schematic" }
+      ],
+      "edges": [
+        { "id": "e1", "from": "ctx.dlpfc", "to": "deep.striatum", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e2", "from": "deep.striatum", "to": "deep.gp", "transmitter": "GABA", "effect": "inhibitory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e3", "from": "deep.gp", "to": "thal.va-md", "transmitter": "GABA", "effect": "inhibitory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } }
+      ],
+      "steps": [
+        { "t": 0.0, "caption": "Cortex drives striatum.", "activeEdges": ["e1"], "claimIds": ["clm.cstc-1"] },
+        { "t": 0.5, "caption": "Direct, indirect and hyperdirect paths diverge.", "activeEdges": ["e2"], "claimIds": ["clm.cstc-1"] },
+        { "t": 1.0, "caption": "Thalamus returns the loop to cortex.", "activeEdges": ["e3"], "claimIds": ["clm.cstc-1"] }
+      ],
+      "disorders": ["ocd"], "claims": ["clm.cstc-1"], "reviewStatus": "draft"
+    },
+    {
+      "id": "circuit.psychosis", "name": "Psychosis circuits", "category": "network",
+      "nodes": [
+        { "structureId": "deep.striatum-dorsal", "label": "Dorsal striatum", "role": "source", "transmitter": "dopamine", "marker": "schematic" },
+        { "structureId": "ctx.pfc", "label": "Prefrontal cortex", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "deep.hipp", "label": "Hippocampus", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "bs.vta", "label": "VTA", "role": "target", "transmitter": "dopamine", "marker": "schematic" }
+      ],
+      "edges": [
+        { "id": "e1", "from": "deep.hipp", "to": "bs.vta", "transmitter": "glutamate", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e2", "from": "bs.vta", "to": "deep.striatum-dorsal", "transmitter": "dopamine", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e3", "from": "ctx.pfc", "to": "deep.striatum-dorsal", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } }
+      ],
+      "steps": [
+        { "t": 0.0, "caption": "Hippocampal-VTA loop proposed (hypothesis).", "activeEdges": ["e1"], "claimIds": ["clm.psychosis-1"] },
+        { "t": 0.5, "caption": "Striatal signalling linked to salience (hypothesis).", "activeEdges": ["e2"], "claimIds": ["clm.psychosis-1"] },
+        { "t": 1.0, "caption": "Cortical E/I imbalance proposed (hypothesis).", "activeEdges": ["e3"], "claimIds": ["clm.psychosis-1"] }
+      ],
+      "disorders": ["schizophrenia"], "claims": ["clm.psychosis-1"], "reviewStatus": "draft"
+    },
+    {
+      "id": "circuit.mood", "name": "Mood circuits", "category": "network",
+      "nodes": [
+        { "structureId": "ctx.sgacc", "label": "Subgenual ACC", "role": "source", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "deep.amygdala", "label": "Amygdala", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "deep.habenula", "label": "Habenula", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "ctx.dlpfc", "label": "DLPFC", "role": "target", "transmitter": "glutamate", "marker": "schematic" }
+      ],
+      "edges": [
+        { "id": "e1", "from": "ctx.sgacc", "to": "deep.amygdala", "transmitter": "glutamate", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e2", "from": "deep.habenula", "to": "bs.vta", "transmitter": "glutamate", "effect": "inhibitory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e3", "from": "ctx.dlpfc", "to": "ctx.sgacc", "transmitter": "glutamate", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } }
+      ],
+      "steps": [
+        { "t": 0.0, "caption": "Subgenual ACC links to amygdala.", "activeEdges": ["e1"], "claimIds": ["clm.mood-1"] },
+        { "t": 0.5, "caption": "Habenula modulates monoamine nuclei.", "activeEdges": ["e2"], "claimIds": ["clm.mood-1"] },
+        { "t": 1.0, "caption": "DLPFC top-down path; neuromodulation target.", "activeEdges": ["e3"], "claimIds": ["clm.mood-1"] }
+      ],
+      "disorders": ["mdd", "bipolar"], "claims": ["clm.mood-1"], "reviewStatus": "draft"
+    },
+    {
+      "id": "circuit.papez", "name": "Papez / extended limbic memory", "category": "loop",
+      "nodes": [
+        { "structureId": "deep.hipp", "label": "Hippocampus", "role": "source", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "deep.mammillary", "label": "Mammillary bodies", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "thal.anterior", "label": "Anterior thalamus", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "ctx.cingulate", "label": "Cingulate", "role": "target", "transmitter": "glutamate", "marker": "schematic" }
+      ],
+      "edges": [
+        { "id": "e1", "from": "deep.hipp", "to": "deep.mammillary", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e2", "from": "deep.mammillary", "to": "thal.anterior", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e3", "from": "thal.anterior", "to": "ctx.cingulate", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } }
+      ],
+      "steps": [
+        { "t": 0.0, "caption": "Fornix carries hippocampus to mammillary.", "activeEdges": ["e1"], "claimIds": ["clm.papez-1"] },
+        { "t": 0.5, "caption": "Mammillothalamic tract onward.", "activeEdges": ["e2"], "claimIds": ["clm.papez-1"] },
+        { "t": 1.0, "caption": "Cingulum returns to hippocampus.", "activeEdges": ["e3"], "claimIds": ["clm.papez-1"] }
+      ],
+      "disorders": ["dementia", "wernicke-korsakoff"], "claims": ["clm.papez-1"], "reviewStatus": "draft"
+    },
+    {
+      "id": "circuit.trisynaptic", "name": "Hippocampal trisynaptic", "category": "loop",
+      "nodes": [
+        { "structureId": "ctx.entorhinal", "label": "Entorhinal cortex", "role": "source", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "deep.dg", "label": "Dentate gyrus", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "deep.ca3", "label": "CA3", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "deep.ca1", "label": "CA1 / subiculum", "role": "target", "transmitter": "glutamate", "marker": "schematic" }
+      ],
+      "edges": [
+        { "id": "e1", "from": "ctx.entorhinal", "to": "deep.dg", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e2", "from": "deep.dg", "to": "deep.ca3", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e3", "from": "deep.ca3", "to": "deep.ca1", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } }
+      ],
+      "steps": [
+        { "t": 0.0, "caption": "Entorhinal input enters dentate.", "activeEdges": ["e1"], "claimIds": ["clm.trisynaptic-1"] },
+        { "t": 0.33, "caption": "Mossy fibers reach CA3.", "activeEdges": ["e2"], "claimIds": ["clm.trisynaptic-1"] },
+        { "t": 0.66, "caption": "Schaffer collaterals reach CA1.", "activeEdges": ["e3"], "claimIds": ["clm.trisynaptic-1"] }
+      ],
+      "disorders": ["dementia"], "claims": ["clm.trisynaptic-1"], "reviewStatus": "draft"
+    },
+    {
+      "id": "circuit.hpa", "name": "HPA stress axis + autonomic", "category": "neurotransmitter",
+      "nodes": [
+        { "structureId": "hypo.pvn", "label": "Hypothalamus PVN", "role": "source", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "endo.pituitary", "label": "Pituitary", "role": "relay", "transmitter": "opioid", "marker": "schematic" },
+        { "structureId": "endo.adrenal", "label": "Adrenal", "role": "relay", "transmitter": "noradrenaline", "marker": "schematic" },
+        { "structureId": "ctx.pfc", "label": "Prefrontal cortex", "role": "target", "transmitter": "glutamate", "marker": "schematic" }
+      ],
+      "edges": [
+        { "id": "e1", "from": "hypo.pvn", "to": "endo.pituitary", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e2", "from": "endo.pituitary", "to": "endo.adrenal", "transmitter": "opioid", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e3", "from": "endo.adrenal", "to": "ctx.pfc", "transmitter": "noradrenaline", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } }
+      ],
+      "steps": [
+        { "t": 0.0, "caption": "PVN initiates the axis.", "activeEdges": ["e1"], "claimIds": ["clm.hpa-1"] },
+        { "t": 0.5, "caption": "Pituitary-adrenal cascade follows.", "activeEdges": ["e2"], "claimIds": ["clm.hpa-1"] },
+        { "t": 1.0, "caption": "Feedback reaches cortex.", "activeEdges": ["e3"], "claimIds": ["clm.hpa-1"] }
+      ],
+      "disorders": ["mdd", "ptsd"], "claims": ["clm.hpa-1"], "reviewStatus": "draft"
+    },
+    {
+      "id": "circuit.triple-network", "name": "Triple network (DMN / salience / executive)", "category": "network",
+      "nodes": [
+        { "structureId": "ctx.precuneus", "label": "Precuneus / PCC (DMN)", "role": "source", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "ctx.insula-ant", "label": "Anterior insula (salience)", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "ctx.dlpfc", "label": "DLPFC (executive)", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "ctx.acc-dorsal", "label": "Dorsal ACC", "role": "target", "transmitter": "glutamate", "marker": "schematic" }
+      ],
+      "edges": [
+        { "id": "e1", "from": "ctx.precuneus", "to": "ctx.insula-ant", "transmitter": "glutamate", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e2", "from": "ctx.insula-ant", "to": "ctx.dlpfc", "transmitter": "glutamate", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e3", "from": "ctx.dlpfc", "to": "ctx.acc-dorsal", "transmitter": "glutamate", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } }
+      ],
+      "steps": [
+        { "t": 0.0, "caption": "Default mode at rest.", "activeEdges": ["e1"], "claimIds": ["clm.triple-1"] },
+        { "t": 0.5, "caption": "Salience network switches.", "activeEdges": ["e2"], "claimIds": ["clm.triple-1"] },
+        { "t": 1.0, "caption": "Executive network engages.", "activeEdges": ["e3"], "claimIds": ["clm.triple-1"] }
+      ],
+      "disorders": ["schizophrenia", "mdd"], "claims": ["clm.triple-1"], "reviewStatus": "draft"
+    },
+    {
+      "id": "circuit.pain", "name": "Pain matrix + descending modulation", "category": "loop",
+      "nodes": [
+        { "structureId": "cord.stt", "label": "Spinothalamic (ascending)", "role": "source", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "thal.vpl", "label": "VPL thalamus", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "ctx.insula-ant", "label": "Insula + ACC", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "bs.pag-rvm", "label": "PAG-RVM (descending)", "role": "target", "transmitter": "opioid", "marker": "schematic" }
+      ],
+      "edges": [
+        { "id": "e1", "from": "cord.stt", "to": "thal.vpl", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e2", "from": "thal.vpl", "to": "ctx.insula-ant", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e3", "from": "bs.pag-rvm", "to": "cord.stt", "transmitter": "opioid", "effect": "inhibitory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } }
+      ],
+      "steps": [
+        { "t": 0.0, "caption": "Ascending spinothalamic input.", "activeEdges": ["e1"], "claimIds": ["clm.pain-1"] },
+        { "t": 0.5, "caption": "Insula-ACC pain experience.", "activeEdges": ["e2"], "claimIds": ["clm.pain-1"] },
+        { "t": 1.0, "caption": "PAG-RVM descending control.", "activeEdges": ["e3"], "claimIds": ["clm.pain-1"] }
+      ],
+      "disorders": ["somatic"], "claims": ["clm.pain-1"], "reviewStatus": "draft"
+    },
+    {
+      "id": "circuit.sleep", "name": "Sleep-wake (arousal + flip-flop)", "category": "neurotransmitter",
+      "nodes": [
+        { "structureId": "bs.aan", "label": "Ascending arousal network", "role": "source", "transmitter": "noradrenaline", "marker": "schematic" },
+        { "structureId": "hypo.orexin", "label": "Orexin (LH)", "role": "relay", "transmitter": "orexin", "marker": "schematic" },
+        { "structureId": "hypo.vlpo", "label": "VLPO", "role": "relay", "transmitter": "GABA", "marker": "schematic" },
+        { "structureId": "ctx.cortex", "label": "Cortex", "role": "target", "transmitter": "glutamate", "marker": "schematic" }
+      ],
+      "edges": [
+        { "id": "e1", "from": "hypo.orexin", "to": "bs.aan", "transmitter": "orexin", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e2", "from": "hypo.vlpo", "to": "bs.aan", "transmitter": "GABA", "effect": "inhibitory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e3", "from": "bs.aan", "to": "ctx.cortex", "transmitter": "noradrenaline", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } }
+      ],
+      "steps": [
+        { "t": 0.0, "caption": "Orexin stabilises wake.", "activeEdges": ["e1"], "claimIds": ["clm.sleep-1"] },
+        { "t": 0.5, "caption": "VLPO flip-flop initiates sleep.", "activeEdges": ["e2"], "claimIds": ["clm.sleep-1"] },
+        { "t": 1.0, "caption": "Arousal reaches cortex.", "activeEdges": ["e3"], "claimIds": ["clm.sleep-1"] }
+      ],
+      "disorders": ["sleep"], "claims": ["clm.sleep-1"], "reviewStatus": "draft"
+    },
+    {
+      "id": "circuit.language", "name": "Language (Broca / Wernicke / arcuate)", "category": "loop",
+      "nodes": [
+        { "structureId": "ctx.wernicke", "label": "Wernicke (STG)", "role": "source", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "wm.arcuate", "label": "Arcuate fasciculus", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "ctx.broca", "label": "Broca (VLPFC)", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "ctx.angular", "label": "Angular / supramarginal", "role": "target", "transmitter": "glutamate", "marker": "schematic" }
+      ],
+      "edges": [
+        { "id": "e1", "from": "ctx.wernicke", "to": "wm.arcuate", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e2", "from": "wm.arcuate", "to": "ctx.broca", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e3", "from": "ctx.angular", "to": "ctx.wernicke", "transmitter": "glutamate", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } }
+      ],
+      "steps": [
+        { "t": 0.0, "caption": "Comprehension in Wernicke area.", "activeEdges": ["e1"], "claimIds": ["clm.language-1"] },
+        { "t": 0.5, "caption": "Arcuate links to Broca.", "activeEdges": ["e2"], "claimIds": ["clm.language-1"] },
+        { "t": 1.0, "caption": "Parietal reading support.", "activeEdges": ["e3"], "claimIds": ["clm.language-1"] }
+      ],
+      "disorders": ["aphasia"], "claims": ["clm.language-1"], "reviewStatus": "draft"
+    },
+    {
+      "id": "circuit.attention", "name": "Executive control + attention", "category": "network",
+      "nodes": [
+        { "structureId": "ctx.fef", "label": "FEF", "role": "source", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "ctx.parietal-dorsal", "label": "Dorsal parietal", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "ctx.tpj", "label": "TPJ (ventral)", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "ctx.dlpfc", "label": "Frontoparietal control", "role": "target", "transmitter": "glutamate", "marker": "schematic" }
+      ],
+      "edges": [
+        { "id": "e1", "from": "ctx.fef", "to": "ctx.parietal-dorsal", "transmitter": "glutamate", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e2", "from": "ctx.tpj", "to": "ctx.dlpfc", "transmitter": "glutamate", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e3", "from": "ctx.parietal-dorsal", "to": "ctx.dlpfc", "transmitter": "glutamate", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } }
+      ],
+      "steps": [
+        { "t": 0.0, "caption": "Dorsal attention orients.", "activeEdges": ["e1"], "claimIds": ["clm.attention-1"] },
+        { "t": 0.5, "caption": "Ventral attention reorients.", "activeEdges": ["e2"], "claimIds": ["clm.attention-1"] },
+        { "t": 1.0, "caption": "Frontoparietal control holds goals.", "activeEdges": ["e3"], "claimIds": ["clm.attention-1"] }
+      ],
+      "disorders": ["adhd"], "claims": ["clm.attention-1"], "reviewStatus": "draft"
+    },
+    {
+      "id": "circuit.social", "name": "Social cognition", "category": "network",
+      "nodes": [
+        { "structureId": "ctx.tpj", "label": "TPJ", "role": "source", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "ctx.mpfc", "label": "mPFC", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "deep.amygdala", "label": "Amygdala", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "ctx.fusiform", "label": "Fusiform / STS", "role": "target", "transmitter": "glutamate", "marker": "schematic" }
+      ],
+      "edges": [
+        { "id": "e1", "from": "ctx.fusiform", "to": "deep.amygdala", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e2", "from": "deep.amygdala", "to": "ctx.mpfc", "transmitter": "glutamate", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e3", "from": "ctx.tpj", "to": "ctx.mpfc", "transmitter": "glutamate", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } }
+      ],
+      "steps": [
+        { "t": 0.0, "caption": "Face input via fusiform.", "activeEdges": ["e1"], "claimIds": ["clm.social-1"] },
+        { "t": 0.5, "caption": "Affective value via amygdala.", "activeEdges": ["e2"], "claimIds": ["clm.social-1"] },
+        { "t": 1.0, "caption": "Mentalising via TPJ-mPFC.", "activeEdges": ["e3"], "claimIds": ["clm.social-1"] }
+      ],
+      "disorders": ["autism"], "claims": ["clm.social-1"], "reviewStatus": "draft"
+    },
+    {
+      "id": "circuit.fnd", "name": "Functional neurological / somatic circuits", "category": "network",
+      "nodes": [
+        { "structureId": "ctx.insula-ant", "label": "Insula (interoception)", "role": "source", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "ctx.acc", "label": "ACC", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "ctx.sma", "label": "SMA (motor)", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "ctx.tpj", "label": "TPJ (agency)", "role": "target", "transmitter": "glutamate", "marker": "schematic" }
+      ],
+      "edges": [
+        { "id": "e1", "from": "ctx.insula-ant", "to": "ctx.acc", "transmitter": "glutamate", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e2", "from": "ctx.acc", "to": "ctx.sma", "transmitter": "glutamate", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e3", "from": "ctx.tpj", "to": "ctx.sma", "transmitter": "glutamate", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } }
+      ],
+      "steps": [
+        { "t": 0.0, "caption": "Interoceptive signal (emerging evidence).", "activeEdges": ["e1"], "claimIds": ["clm.fnd-1"] },
+        { "t": 0.5, "caption": "Limbic-motor interaction (hypothesis).", "activeEdges": ["e2"], "claimIds": ["clm.fnd-1"] },
+        { "t": 1.0, "caption": "Agency attribution via TPJ (hypothesis).", "activeEdges": ["e3"], "claimIds": ["clm.fnd-1"] }
+      ],
+      "disorders": ["fnd", "somatic"], "claims": ["clm.fnd-1"], "reviewStatus": "draft"
+    },
+    {
+      "id": "circuit.feeding", "name": "Feeding and homeostasis", "category": "neurotransmitter",
+      "nodes": [
+        { "structureId": "hypo.arcuate", "label": "Arcuate nucleus", "role": "source", "transmitter": "GABA", "marker": "schematic" },
+        { "structureId": "hypo.lh", "label": "Lateral hypothalamus", "role": "relay", "transmitter": "orexin", "marker": "schematic" },
+        { "structureId": "hypo.vmh", "label": "VMH", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "bs.nts", "label": "Brainstem NTS", "role": "target", "transmitter": "glutamate", "marker": "schematic" }
+      ],
+      "edges": [
+        { "id": "e1", "from": "hypo.arcuate", "to": "hypo.lh", "transmitter": "GABA", "effect": "inhibitory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e2", "from": "hypo.arcuate", "to": "hypo.vmh", "transmitter": "glutamate", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e3", "from": "hypo.lh", "to": "bs.nts", "transmitter": "orexin", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } }
+      ],
+      "steps": [
+        { "t": 0.0, "caption": "Arcuate senses energy state.", "activeEdges": ["e1"], "claimIds": ["clm.feeding-1"] },
+        { "t": 0.5, "caption": "LH-VMH opponent paths.", "activeEdges": ["e2"], "claimIds": ["clm.feeding-1"] },
+        { "t": 1.0, "caption": "Brainstem meal control.", "activeEdges": ["e3"], "claimIds": ["clm.feeding-1"] }
+      ],
+      "disorders": ["eating"], "claims": ["clm.feeding-1"], "reviewStatus": "draft"
+    },
+    {
+      "id": "circuit.motor", "name": "Motor + cerebellar cognitive-affective", "category": "loop",
+      "nodes": [
+        { "structureId": "ctx.motor", "label": "Motor cortex", "role": "source", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "deep.putamen", "label": "Putamen", "role": "relay", "transmitter": "GABA", "marker": "schematic" },
+        { "structureId": "cb.dentate", "label": "Dentate (cerebellar)", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "thal.vl", "label": "VL thalamus", "role": "target", "transmitter": "glutamate", "marker": "schematic" }
+      ],
+      "edges": [
+        { "id": "e1", "from": "ctx.motor", "to": "deep.putamen", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e2", "from": "cb.dentate", "to": "thal.vl", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e3", "from": "thal.vl", "to": "ctx.motor", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } }
+      ],
+      "steps": [
+        { "t": 0.0, "caption": "Corticospinal command descends.", "activeEdges": ["e1"], "claimIds": ["clm.motor-1"] },
+        { "t": 0.5, "caption": "Cerebellar correction via dentate.", "activeEdges": ["e2"], "claimIds": ["clm.motor-1"] },
+        { "t": 1.0, "caption": "Thalamus returns to cortex.", "activeEdges": ["e3"], "claimIds": ["clm.motor-1"] }
+      ],
+      "disorders": ["parkinson", "ataxia"], "claims": ["clm.motor-1"], "reviewStatus": "draft"
+    },
+    {
+      "id": "circuit.hallucination", "name": "Hallucination substrates", "category": "network",
+      "nodes": [
+        { "structureId": "ctx.stg", "label": "Auditory cortex / STG", "role": "source", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "ctx.visual", "label": "Visual cortex", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "thal.mgn-lgn", "label": "MGN / LGN", "role": "relay", "transmitter": "glutamate", "marker": "schematic" },
+        { "structureId": "ctx.pfc", "label": "Prefrontal (reality monitoring)", "role": "target", "transmitter": "glutamate", "marker": "schematic" }
+      ],
+      "edges": [
+        { "id": "e1", "from": "thal.mgn-lgn", "to": "ctx.stg", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e2", "from": "thal.mgn-lgn", "to": "ctx.visual", "transmitter": "glutamate", "effect": "excitatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } },
+        { "id": "e3", "from": "ctx.pfc", "to": "ctx.stg", "transmitter": "glutamate", "effect": "modulatory", "geometry": { "type": "schematic-spline", "ref": null, "fidelity": "schematic" } }
+      ],
+      "steps": [
+        { "t": 0.0, "caption": "Auditory pathway activity (network context).", "activeEdges": ["e1"], "claimIds": ["clm.hallucination-1"] },
+        { "t": 0.5, "caption": "Visual pathway activity (network context).", "activeEdges": ["e2"], "claimIds": ["clm.hallucination-1"] },
+        { "t": 1.0, "caption": "Monitoring attribution (hypothesis).", "activeEdges": ["e3"], "claimIds": ["clm.hallucination-1"] }
+      ],
+      "disorders": ["schizophrenia"], "claims": ["clm.hallucination-1"], "reviewStatus": "draft"
+    }
+  ],
+  "claims": [
+    { "id": "clm.mesolimbic-1", "text": "Mesolimbic routing described in teaching schematics.", "evidence": "emerging", "sourceIds": ["src.needs-source"] },
+    { "id": "clm.fear-1", "text": "Fear routing described in teaching schematics.", "evidence": "emerging", "sourceIds": ["src.needs-source"] },
+    { "id": "clm.cstc-1", "text": "CSTC loop organisation described in teaching schematics.", "evidence": "emerging", "sourceIds": ["src.needs-source"] },
+    { "id": "clm.psychosis-1", "text": "Psychosis circuit roles are hypotheses, not established.", "evidence": "hypothesis", "sourceIds": ["src.needs-source"] },
+    { "id": "clm.mood-1", "text": "Mood circuit roles described in teaching schematics.", "evidence": "emerging", "sourceIds": ["src.needs-source"] },
+    { "id": "clm.papez-1", "text": "Papez routing described in teaching schematics.", "evidence": "emerging", "sourceIds": ["src.needs-source"] },
+    { "id": "clm.trisynaptic-1", "text": "Trisynaptic routing described in teaching schematics.", "evidence": "emerging", "sourceIds": ["src.needs-source"] },
+    { "id": "clm.hpa-1", "text": "HPA cascade described in teaching schematics.", "evidence": "emerging", "sourceIds": ["src.needs-source"] },
+    { "id": "clm.triple-1", "text": "Triple-network roles described in teaching schematics.", "evidence": "emerging", "sourceIds": ["src.needs-source"] },
+    { "id": "clm.pain-1", "text": "Pain routing described in teaching schematics.", "evidence": "emerging", "sourceIds": ["src.needs-source"] },
+    { "id": "clm.sleep-1", "text": "Sleep-wake routing described in teaching schematics.", "evidence": "emerging", "sourceIds": ["src.needs-source"] },
+    { "id": "clm.language-1", "text": "Language routing described in teaching schematics.", "evidence": "emerging", "sourceIds": ["src.needs-source"] },
+    { "id": "clm.attention-1", "text": "Attention network roles described in teaching schematics.", "evidence": "emerging", "sourceIds": ["src.needs-source"] },
+    { "id": "clm.social-1", "text": "Social circuit roles described in teaching schematics.", "evidence": "emerging", "sourceIds": ["src.needs-source"] },
+    { "id": "clm.fnd-1", "text": "FND circuit roles are emerging or hypothesis.", "evidence": "hypothesis", "sourceIds": ["src.needs-source"] },
+    { "id": "clm.feeding-1", "text": "Feeding routing described in teaching schematics.", "evidence": "emerging", "sourceIds": ["src.needs-source"] },
+    { "id": "clm.motor-1", "text": "Motor loop routing described in teaching schematics.", "evidence": "emerging", "sourceIds": ["src.needs-source"] },
+    { "id": "clm.hallucination-1", "text": "Hallucination substrates in network context; attribution is hypothesis.", "evidence": "hypothesis", "sourceIds": ["src.needs-source"] }
+  ]
+}

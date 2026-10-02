@@ -1,0 +1,14 @@
+/* P9 base styles: responsive to 375px, reduced-motion, focus-visible, light/dark. */
+:root { color-scheme: light dark; }
+main { max-width: 1100px; margin: 0 auto; padding: 12px; font-family: system-ui, sans-serif; }
+.na4d-grid { display: grid; grid-template-columns: 240px 1fr; gap: 12px; }
+@media (max-width: 640px) {
+  .na4d-grid { grid-template-columns: 1fr; }
+  nav[aria-label="Layer tree"] { max-height: 40vh; overflow: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+[data-theme="dark"] { background: #111; color: #eee; }
+[data-theme="dark"] canvas { background: #000; }

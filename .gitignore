@@ -1,0 +1,11 @@
+data-raw/
+node_modules/
+dist/
+# Derived atlas packs (large binaries, fetched/meshed via pipeline/):
+public/atlas/atlas-exact/
+public/atlas/tracts/
+public/atlas/spinal/
+public/atlas/vascular/
+public/atlas/volumes/
+public/atlas/pack-nc/
+# Committed: public/atlas/core-anatomy/manifest.json + README (CC BY-SA 4.0, attributed)
