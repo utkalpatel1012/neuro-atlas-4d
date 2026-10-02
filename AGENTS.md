@@ -5,7 +5,8 @@ Old repo `C:\Projects\neuro-atlas-3d\` is PRESERVED untouched (branch `autonomou
 
 ## Commands (Windows PowerShell 5.1)
 
-- `npm.cmd ci` — clean install (never `npm`, PowerShell blocks `npm.ps1`).
+- `npm.cmd ci` — clean install (never bare `npm` in PowerShell; it blocks on `npm.ps1`).
+  Inside `package.json` scripts use plain `npm run …` (CI runs Linux; npm spawns via cmd there).
 - `npm.cmd run verify` = typecheck + lint + `lint:content:strict` + unit tests + `test:mapping` + `test:alignment` + build. CI runs it on every push. Must be green before any phase commit.
 - `python pipeline/fetch.py --core` — downloads only (network step). App must build offline from `public/atlas/` afterwards.
 - Chain with `cmd1; if ($?) { cmd2 }` (no `&&`).

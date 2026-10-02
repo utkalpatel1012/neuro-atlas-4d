@@ -14,7 +14,7 @@
     "coverage": "node scripts/coverage-gen.mjs && node scripts/alignment-gen.mjs",
     "test:alignment": "node scripts/test-alignment.mjs",
     "build": "node scripts/copy-content.mjs && vite build",
-    "verify": "npm.cmd run typecheck && npm.cmd run lint && npm.cmd run lint:content:strict && npm.cmd test && npm.cmd run test:mapping && npm.cmd run test:alignment && npm.cmd run build",
+    "verify": "npm run typecheck && npm run lint && npm run lint:content:strict && npm test && npm run test:mapping && npm run test:alignment && npm run build",
     "dev": "vite",
     "preview": "vite preview"
   },
