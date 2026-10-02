@@ -3,6 +3,7 @@
 Log per R1. Newest first.
 
 - 2026-10-03: Push requested → new public repo `utkalpatel1012/neuro-atlas-4d` (old `neuro-atlas-3d` untouched). `.gitignore` narrowed so `core-anatomy/manifest.json` + README ship (runtime fetch needs it); large derived packs stay ignored. Vite `base` env-driven (`PAGES_BASE`, default `/`); deploy workflow builds with `/neuro-atlas-4d/` + deploy-pages job. Added Apache-2.0 LICENSE (code only; meshes/content CC BY-SA 4.0).
+- 2026-10-03: CI fix — `npm.cmd` → plain `npm` inside package.json scripts (npm.cmd is Windows-PowerShell-only; broke Linux CI exit 127). Interactive use stays `npm.cmd`. Site live after fix.
 
 - 2026-10-03: P0 verify green with minimal React 18 + Vite 6 + TS strict scaffold (no Playwright/Vitest yet — node:test for coords; Vitest + Playwright land in P1 per §10). `@types/node` added to fix TS2688. Registration stays PENDING with NULL metrics (no false MNI claims).
 - 2026-10-03: P2 H4 transparency = (a) alphaHash stochastic (`transparent + alphaHash + depthWrite=false` for translucent; opaque path untouched). Rejected (b) weighted OIT (custom shaders/memory) and (c) sort-only (fails ≥50 nested). 30%-nucleus case handled via per-node opacity + ghost focus+context.
