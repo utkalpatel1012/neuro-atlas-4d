@@ -2,6 +2,9 @@
 
 Log per R1. Newest first.
 
+- 2026-10-03: Live-Chrome debugging — Playwright uses system Chrome (`channel: chrome`) since bundled-Chromium download stalls locally. 15/15 E2E PASS headless; fixed real deep-link bug (hashchange restore). `retries: 1` in config.
+- 2026-10-03: P1 shell uses Zustand store (single source of truth) + `BrainScene` wrapper; `setNodeVisible` sets explicit boolean; Vitest + Playwright added; `@types/three` added. P2 peel order meninges→vessels→cortex→WM→deep; explode 0 = exact reset.
+
 - 2026-10-03: Push requested → new public repo `utkalpatel1012/neuro-atlas-4d` (old `neuro-atlas-3d` untouched). `.gitignore` narrowed so `core-anatomy/manifest.json` + README ship (runtime fetch needs it); large derived packs stay ignored. Vite `base` env-driven (`PAGES_BASE`, default `/`); deploy workflow builds with `/neuro-atlas-4d/` + deploy-pages job. Added Apache-2.0 LICENSE (code only; meshes/content CC BY-SA 4.0).
 - 2026-10-03: CI fix — `npm.cmd` → plain `npm` inside package.json scripts (npm.cmd is Windows-PowerShell-only; broke Linux CI exit 127). Interactive use stays `npm.cmd`. Site live after fix.
 

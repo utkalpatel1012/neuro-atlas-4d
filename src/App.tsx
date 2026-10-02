@@ -17,11 +17,17 @@ import { parseHash, buildHash } from './state/deeplink';
 export default function App() {
   const { selection, select, setCrosshair, crosshairMNI, layerPreset, hiddenMasters } = useAtlas();
 
-  // Restore from URL on load (deep links #s= #c= #d= #x= #p= + P2 additive #vis=).
+  // Restore from URL on load + on same-document hash navigation (deep links #s= #c= #d= #x= #p= + P2 #vis=).
   useEffect(() => {
-    const dl = parseHash(window.location.hash);
-    if (dl.s) select(dl.s);
-    if (dl.x) setCrosshair(dl.x);
+    const restore = () => {
+      const dl = parseHash(window.location.hash);
+      const cur = useAtlas.getState();
+      if (dl.s && dl.s !== cur.selection) select(dl.s);
+      if (dl.x) setCrosshair(dl.x);
+    };
+    restore();
+    window.addEventListener('hashchange', restore);
+    return () => window.removeEventListener('hashchange', restore);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
